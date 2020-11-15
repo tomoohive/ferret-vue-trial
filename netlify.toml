@@ -1,13 +1,4 @@
-[[redirects]]
-  from = "/calc/"
-  to = "https://fashion-6z2jvt47ya-uc.a.run.app/"
-  status = 200
-  force = true
-  signed = "API_SIGNATURE_TOKEN"
-
-[[redirects]]
-  from = "/calccolorful/"
-  to = "https://colorfulcalc-ntym3e3kka-de.a.run.app/"
-  status = 200
-  force = true
-  signed = "API_SIGNATURE_TOKEN"
+[[headers]]
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
