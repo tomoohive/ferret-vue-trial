@@ -68,13 +68,13 @@ const actions = {
     });
     console.log(state.clothesList);
     const response1 = await axios
-      .post("https://fashion-6z2jvt47ya-uc.a.run.app/calc/", {
+      .post("/calc/", {
         words: send_words
       })
       .then(res => res.data)
       .catch(err => console.log(err));
     const response2 = await axios
-      .post("https://colorfulcalc-ntym3e3kka-de.a.run.app/calccolorful/", {
+      .post("/calccolorful/", {
         image_path: state.image
       })
       .then(res => res.data)

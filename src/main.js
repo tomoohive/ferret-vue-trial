@@ -2,6 +2,7 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
+import cors from "cors";
 import { auth } from "./firebase";
 
 import "bootstrap/dist/css/bootstrap.css";
@@ -13,6 +14,7 @@ auth.onAuthStateChanged(() => {
     app = createApp(App)
       .use(store)
       .use(router)
+      .use(cors)
       .mount("#app");
   }
 });
