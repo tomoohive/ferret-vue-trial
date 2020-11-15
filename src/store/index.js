@@ -1,8 +1,9 @@
 import { createStore } from "vuex";
+import evaluation from "./modules/evaluation";
 
 export default createStore({
-  state: {},
-  mutations: {},
-  actions: {},
-  modules: {}
+  modules: {
+    evaluation
+  },
+  strict: false
 });
